@@ -12,6 +12,18 @@
     </ul>
   </div>
 
+  <h3>Редактирование объекта</h3>
+  <form>
+    <div class="form-group">
+      <input type="text" placeholder="Название машины" class="form-control" [(ngModel)]="name" name="name"><br>
+      <input type="text" placeholder="Модель машины" class="form-control" [(ngModel)]="model" name="model"><br>
+      <input type="number" placeholder="Скорость" class="form-control" [(ngModel)]="speed" name="speed"><br>
+      <input type="text" placeholder="Цвет машины" class="form-control" [(ngModel)]="colors.car" name="car"><br>
+      <input type="text" placeholder="Цвет салона" class="form-control" [(ngModel)]="colors.salon" name="salon"><br>
+      <input type="text" placeholder="Цвет дисков" class="form-control" [(ngModel)]="colors.wheels" name="wheels">
+    </div>
+  </form>
+
   <h3>Возможности автомобиля</h3>
   <form (submit)="addOpt(option.value)">
     <div class="form-group">
